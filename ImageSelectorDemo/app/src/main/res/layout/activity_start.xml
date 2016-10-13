@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.com.imageselectordemo.StartActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="Multiselect"
+        android:text="Multiselect" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="Single"
+        android:text="Single" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载结果："
+        android:textSize="22dp"
+        />
+
+
+    <!--加载回来的图片结果-->
+    <GridView
+        android:id="@+id/imgGridview"
+        android:layout_width="match_parent"
+        android:numColumns="3"
+        android:layout_height="match_parent"></GridView>
+
+
+
+
+
+</LinearLayout>
